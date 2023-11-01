@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-header text-center">
+        <h2>Student Enrollment Form using the JPDB API</h2>
+      </div>
+      <form id="stdForm" method="get">
+        <div class="form-group">
+          <label for="stdRoll">Roll-No :</label>
+          <input
+            type="text"
+            class="form-control"
+            name="stdRoll"
+            id="stdRoll"
+            placeholder="Enter Student Roll Number"
+            onchange= "getStd()"
+            required
+          >
+        </div>
+        <div class="form-group">
+          <label for="stdName">Full Name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="stdName"
+            placeholder="Enter Full Name"
+            name="stdName"
+          />
+        </div>
+        <div class="form-group">
+          <label for="stdClass">Class:</label>
+          <input
+            type="number"
+            class="form-control"
+            id="stdClass"
+            placeholder="Enter Your Class"
+            name="stdClass"
+          />
+        </div>
+        <div class="form-group">
+            <label for="stdBirthdate">Birth-Date:</label>
+            <input
+              type="date"
+              class="form-control"
+              id="stdBirthdate"
+              placeholder="Enter Birth-Date"
+              name="stdBirthdate"
+            />
+          </div>
+          <div class="form-group">
+            <label for="stdAddress">Address</label>
+            <input
+              type="text"
+              class="form-control"
+              id="stdAddress"
+              placeholder="Enter Address"
+              name="stdAddress"
+            />
+          </div>
+          <div class="form-group">
+            <label for="stdEnroll">Enrollment-Date:</label>
+            <input
+              type="date"
+              class="form-control"
+              id="stdEnroll"
+              placeholder="Enter Enrollment Date"
+              name="stdEnroll"
+            />
+          </div>
+          <div class="form-group text-center">
+            <button type="button" class="btn btn-lg btn-primary" id="save" onclick="saveData()"  
+            disabled>Save</button>
+            <button type="button" class="btn btn-lg btn-primary" id="update" onclick="updateData()"  disabled>Update</button>
+            <button type="button" class="btn btn-lg btn-primary" id="reset" onclick="resetForm()" disabled>Reset</button>
+        </div>
+      </form>
+    </div>
+    <img src="github.png" alt="Github Handle" >
+    <script src="https://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+    <script src="index.js"></script> 
+  </body>
+</html>
