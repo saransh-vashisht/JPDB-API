@@ -36,6 +36,61 @@ The benefits of using JsonPowerDB for this project include:
 
 ## Screenshots
 
+![App Screenshot](https://github.com/saransh-vashisht/JPDB-API/blob/main/images/Screenshot%202023-11-02%20072518.png)
+
+![Database Screenshot](https://github.com/saransh-vashisht/JPDB-API/blob/main/images/Screenshot%202023-11-02%20072900.png)
+
+### Buttons
+
+- UPDATE : when student roll number is already present in database then student information is fetched from database and filled in respective feild then user can UPDATE student information
+- SAVE : If student roll number is not existed in database then we can fill other field and save in database
+- RESET : By this we can clear all field of form and with this except first field (roll-no) other field are disabled until user enter any roll number
+
+# HOW TO USE
+
+- Initially
+
+![1](https://github.com/saransh-vashisht/JPDB-API/blob/main/images/1.png)
+
+- We need to enter a roll number
+
+- If roll number is not valid
+
+![2](https://github.com/saransh-vashisht/JPDB-API/blob/main/images/2.png)
+
+- If roll number is valid and that roll number is existnig in database
+
+![3](https://github.com/saransh-vashisht/JPDB-API/blob/main/images/3.png)
+
+Fetching student data using roll number If student already present in database, then all field filled with that student information
+
+- otherwise, other fields are enabled after user input roll number
+
+![4](https://github.com/saransh-vashisht/JPDB-API/blob/main/images/4.png)
+
+# Installation
+
+Make a folder in your system and clone the project using git bash then open the project in Visual Studio Code or any IDE you prefer.
+
+## Clone the project
+
+```
+https://github.com/saransh-vashisht/JPDB-API
+
+```
+
+### After Cloning
+
+Move to  script.js file replace the connectionToken by with your Connection Token.
+
+# Sources
+
+- Introduction to JsonPowerDB - V2.0 course on https://careers.login2explore.com/
+- Bootstrap
+
+
+
+
 
 
 
